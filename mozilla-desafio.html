@@ -7,6 +7,22 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=1274, user-scalable=no">
 		<link rel="stylesheet" href="themes/mozilla/styles/style.css">
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-34541106-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
 	</head>
 	<body class="list">
 		<header class="caption">
@@ -38,6 +54,8 @@
 					<img src="pictures/introicons.png" class="middle" alt="Icons of B2G, Firefox OS and Mozilla Apps">
 					<footer class="byline">
 						Santiago Hollmann, X Jornadas FICCTE. Morón, 2012
+						</br>
+						Slides: <a href="http://bit.ly/ficcte2012"> bit.ly/ficcte2012</a>
 					</footer>
 				</section>
 			</div>
@@ -81,7 +99,7 @@
 					<footer class="notes">
 						Sin Mozilla, Internet Explorer sería el único navegador web o el navegador dominante en el mercado.
 						Además Internet no sería lo que conocemos hoy. Mozilla es una organización sin fines de lucro para
-						mantener la web abierta y que sin Mozilla, Internet hubiese sido sólo de las empresas.
+						mantener la web abierta y sin Mozilla, Internet hubiese sido sólo de las empresas.
 					</footer>
 
 				</section>
@@ -100,7 +118,7 @@
 						Firefox (y Opera) abrieron el camino para que otros navegadores liberen su código y
 						trabajen con estándares abierto. Inclusive IE está haciendo mucho para que se utilicen
 						los estándares web.
-						Es un logro para Firefox que hoy existan 5 navegadores dominantes y que con la competencia
+						Es un logro para Firefox que hoy existan 5 navegadores dominantes y con la competencia
 						el que se beneficia es el usuario.
 					</footer>
 
@@ -117,9 +135,9 @@
 					<img src="pictures/mozillamore.png" class="middle" alt="Mozilla is more than Firefox">
 
 					<footer class="notes">
-						Mozilla es mucho más que sólo Firefox o Thunderbird. Somos una organización sin fines de lucro
-						que promueve la web abierta. Esto significa que educamos a las personas para que generen, mezclen,
-						utilicen y distribuyan contenido. Además protejemos la privacidad y la identidad de las personas en la web.
+						Mozilla es mucho más que sólo Firefox o Thunderbird. Es una organización sin fines de lucro
+						que promueve la web abierta. Esto significa que educa a las personas para que generen, mezclen,
+						utilicen y distribuyan contenido. Además proteje la privacidad y la identidad de las personas en la web.
 					</footer>
 
 				</section>
@@ -159,7 +177,7 @@
 					</p>
 					<footer class="notes">
 						Mozilla Thimble es una manera simple e interactiva de aprender HTML básico. Un editor en
-						el lado izquierdo de la pantalla te deja escriibir cosas y los resultados se muestran
+						el lado izquierdo de la pantalla te deja escribir cosas y los resultados se muestran
 						inmediatamente en la derecha. También podés elegir alguno de los proyectos existentes y
 						escribir en ellos. El editor muestra cuando el usuario comete un error y los links a la
 						documentación en MDN. Podés elegir entre varios retos para convertirte cada vez más en un mejor
@@ -203,10 +221,10 @@
 					</p>
 
 					<footer class="notes">
-						Mozilla Persona es una manera simple de ingresar en aplicaciones web y sitios. En lugar de crear
+						Mozilla Persona es una manera simple de ingresar en aplicaciones y sitios web. En lugar de crear
 						un usuario y contraseña por cada producto al que ingresás, Persona te permite identificar
-						con uno de tus correos verificados. De esta manera, no tenés que tenes miles de perfiles
-						online y sólo le das a los sitios la información que querés.
+						con uno de tus correos verificados. De esta manera, no tenés que tener cientos de perfiles
+						online y sólo le das a los sitios web la información que querés.
 						La diferencia con OpenID es que Persona utiliza sólo el correo para autenticar, protege tu
 						privacidad en la navegación (no hay terceros en el ingreso) y se integra en el navegador.
 					</footer>
@@ -249,7 +267,7 @@
 						y que los smartphones eran el futuro y que HTML5 es el nuevo estándar
 						para darle poder a los teléfonos inteligentes, estábamos muy felices e
 						interesados. Finalmente, la estándares web tienen una plataforma
-						preparada y todos estamos preparados para pasar a una experiencia abierta.
+						preparada y todos estamos listos para pasar a una experiencia abierta.
 					</footer>
 
 				</section>
@@ -346,7 +364,7 @@
 					<img src="pictures/responsive-demo.png" class="middle" alt="Two views of the same page">
 
 					<footer class="notes">
-						Esta herramienta permite testear de manera fácil entre resoluciones y
+						Esta herramienta permite probar de manera fácil entre resoluciones y
 						orientaciones. En lugar de cambiar el tamaño a la ventana, cambiás el tamaño
 						del documente. Además incluye varios sets de tamaños de pantalla.
 					</footer>
@@ -435,7 +453,7 @@
 					</p>
 
 					<footer class="notes">
-						La Open Web Device es una iniciativa de Telefónica para llevar
+						El Open Web Device es una iniciativa de Telefónica para llevar
 						la web a las personas que no pueden tener smartphones de primer
 						nivel y que quieren estar conectados. Estos dispositivos se lanzarán
 						en Brasil a principios del 2013.
@@ -533,6 +551,72 @@
 				</section>
 			</div>
 		</div>
+		<div id="how-difficult" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>¿Qué tan fácil? -.-</h2>
+					</header>
+					<ul>
+						<li>
+							git clone https://github.com/mozilla-b2g/gaia
+						</li>
+						<li>
+							cd gaia
+						</li>
+						<li>
+							DEBUG=1 make
+						</li>
+						<li>
+							/path/to/firefox index.html
+						</li>
+					</ul>
+					<p class="demourl">
+						<a href="https://wiki.mozilla.org/Gaia/Hacking">https://wiki.mozilla.org/Gaia/Hacking</a>
+					</p>
+
+					<footer class="notes">
+						Cloná. Compilá. Ejecutá.
+					</footer>
+
+				</section>
+			</div>
+		</div>
+
+		<div id="how-to-play-with-firefox-os2" class="slide">
+			<div>
+				<section>
+					<header>
+						<h2>¿Cómo jugar con Firefox OS?</h2>
+					</header>
+					<ul>
+						<li>
+							Corré Gaia sobre Firefox Nightly (fácil)
+						</li>
+						<li>
+							Utilizá un emulador (Linux/Mac)
+						</li>
+						<li>
+							Instalá en tu dispositivo (muy dificil)
+						</li>
+					</ul>
+					<p class="demourl">
+						<a href="https://wiki.mozilla.org/Gaia/Hacking">https://wiki.mozilla.org/Gaia/Hacking</a>
+					</p>
+
+					<footer class="notes">
+						Podés ejectuar Gaia en tu computadora adentro de Firefox Nigthly o
+						en un emulador.
+						Lo más fácil es ejectuarlo en el navegador y crear tus aplicaciones
+						con las herramientas a las que estás acostumbrado.
+						También se puede instalar en tu dispositivo pero es complejo.
+						La idea de Firefox OS es generar teléfonos baratos que sean nuevos
+						y basados en la web y no reemplazar Android/iOS.
+					</footer>
+
+				</section>
+			</div>
+		</div>
 
 		<div id="more-info" class="slide">
 			<div>
@@ -542,13 +626,13 @@
 					</header>
 					<ul class="longlist">
 						<li>
-							<strong>Seguí</strong><a href="http://twitter.com/Boot2Gecko">@Boot2Gecko</a> y <a href="http://twitter.com/mozhacks">@mozhacks</a> en Twitter
+							<strong>Seguí </strong><a href="http://twitter.com/Boot2Gecko">@Boot2Gecko</a> y <a href="http://twitter.com/mozhacks">@mozhacks</a> en Twitter
 						</li>
 						<li>
 							<strong>Subscribite a la lista de correo</strong>: <a href="http://groups.google.com/group/mozilla.dev.platform">http://groups.google.com/group/mozilla.dev.platform</a>
 						</li>
 						<li>
-							<strong>Encontranos en IRC</strong>: irc.mozilla.org channel #B2G
+							<strong>Encontranos en IRC</strong>: irc.mozilla.org canal #B2G
 						</li>
 						<li>
 							<strong>B2G Repo</strong>: <a href="https://github.com/mozilla-b2g/B2G">https://github.com/mozilla-b2g/B2G</a>
